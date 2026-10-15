@@ -69,13 +69,13 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage, onO
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`px-3.5 py-2 rounded-md text-sm font-medium transition-all cursor-pointer ${
+                className={`px-3.5 py-2 rounded-md text-sm font-medium transition-all cursor-pointer relative flex items-center space-x-1.5 ${
                   currentPage === item.id
                     ? 'bg-blue-50 text-blue-700 font-semibold border-b-2 border-blue-700'
                     : 'text-slate-700 hover:text-blue-700 hover:bg-slate-50'
                 }`}
               >
-                {item.label}
+                <span>{item.label}</span>
               </button>
             ))}
           </nav>

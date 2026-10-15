@@ -121,7 +121,7 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
               )}
             </div>
 
-            {/* Company Social Media Links */}
+            {/* Connect With Us (LinkedIn Only) */}
             <div className="pt-4 border-t border-slate-800/80 space-y-2">
               <span className="text-[11px] font-semibold text-slate-400 block uppercase tracking-wider">
                 Connect With Us
@@ -286,7 +286,7 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
               <li>
                 <button
                   onClick={() => handleNavClick('terms')}
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-400 hover:text-white transition-colors cursor-pointer"
                 >
                   Terms & Conditions
                 </button>
@@ -372,8 +372,8 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
           <p>© {new Date().getFullYear()} {COMPANY_INFO.name} All rights reserved. Enterprise Software & IT Services.</p>
 
           <div className="flex items-center space-x-2">
-            <span className="text-[11px] text-slate-500 hidden sm:inline mr-1">Connect:</span>
-            <CompanySocialLinks variant="inline" />
+            <span className="text-[11px] text-slate-500 hidden sm:inline mr-1">LinkedIn:</span>
+            <CompanySocialLinks variant="compact" />
           </div>
 
           <div className="flex items-center space-x-6">

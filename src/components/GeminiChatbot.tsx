@@ -79,9 +79,9 @@ function getLocalBusinessAnswer(query: string): string | null {
     return `**WhatsApp Integration Available:**\n\nYou can chat with our team directly on WhatsApp at **+91 ${WHATSAPP_NUMBER}**.\n\nClick the green WhatsApp button on the left or tap the WhatsApp button above to open a chat immediately!`;
   }
 
-  // LinkedIn / Social Media query
-  if (q.includes('linkedin') || q.includes('linkden') || q.includes('social') || q.includes('cpmpany linkden')) {
-    return `**Supernova on LinkedIn & Social Media:**\n\n• **Official Company LinkedIn:** [linkedin.com/company/supernova-pvt-ltd](https://www.linkedin.com/company/supernova-pvt-ltd)\n• You can also click the **LinkedIn** button directly in the header navigation, footer, or contact page.\n• **Direct Real-Time Chat:** Connect with us on WhatsApp at **+91 ${WHATSAPP_NUMBER}** or click "Talk to Us".`;
+  // LinkedIn / Connect query
+  if (q.includes('linkedin') || q.includes('linkden') || q.includes('social') || q.includes('cpmpany linkden') || q.includes('connect with us')) {
+    return `**Connect With Us on LinkedIn:**\n\n• **Official Company LinkedIn:** [linkedin.com/company/supernova-pvt-ltd](https://www.linkedin.com/company/supernova-pvt-ltd)\n• You can click the **LinkedIn** button in the header navigation, the **Connect With Us** section in the footer, or on the Contact page.\n• **Direct Real-Time Chat:** You can also reach our team directly via WhatsApp at **+91 ${WHATSAPP_NUMBER}** or click "Talk to Us".`;
   }
 
   // What do you do

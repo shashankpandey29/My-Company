@@ -375,10 +375,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ setCurrentPage }) => {
               </div>
             </div>
 
-            {/* Official Company Social Media Clickable Links */}
+            {/* Official Company LinkedIn Link */}
             <div className="bg-white border border-slate-200 rounded-lg p-5 space-y-3 shadow-sm">
               <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                Connect on LinkedIn &amp; Social Media
+                Connect With Us on LinkedIn
               </h4>
               <CompanySocialLinks variant="buttons" />
             </div>
